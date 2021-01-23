@@ -8,6 +8,8 @@ import uuid
 import requests
 from urllib.parse import urlparse
 from io import BytesIO
+from flask import Flask
+app = Flask(__name__)
 # To install this module, run:
 # python -m pip install Pillow
 from PIL import Image, ImageDraw
