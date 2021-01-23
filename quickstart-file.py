@@ -8,14 +8,16 @@ import uuid
 import requests
 from urllib.parse import urlparse
 from io import BytesIO
-from flask import Flask
-app = Flask(__name__)
+
 # To install this module, run:
 # python -m pip install Pillow
 from PIL import Image, ImageDraw
 from azure.cognitiveservices.vision.face import FaceClient
 from msrest.authentication import CognitiveServicesCredentials
 from azure.cognitiveservices.vision.face.models import TrainingStatusType, Person
+
+from flask import Flask
+app = Flask(__name__)
 
 #This is a example for Azure Assignment
 
